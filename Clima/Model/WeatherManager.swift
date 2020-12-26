@@ -15,7 +15,8 @@ protocol WeatherManagerDelegate {
 }
 
 struct WeatherManager {
-    let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=e72ca729af228beabd5d20e3b7749713&units=metric"
+    let myOpenWeatherAPIKey = "3b36b77d5b3f04cb938e3c811c233596"
+    let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=\(myOpenWeatherAPIKey)&units=metric"
     
     var delegate: WeatherManagerDelegate?
     
